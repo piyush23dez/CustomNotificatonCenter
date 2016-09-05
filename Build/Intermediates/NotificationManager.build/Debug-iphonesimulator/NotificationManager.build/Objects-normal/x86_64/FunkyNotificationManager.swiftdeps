@@ -1,0 +1,329 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FunkyNotificationManager"
+provides-nominal:
+- "C19NotificationManager24FunkyNotificationManager"
+provides-member:
+- ["C19NotificationManager24FunkyNotificationManager", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "NSNotification"
+- "Void"
+- "NSObjectProtocol"
+- "FunkyNotificationManager"
+- "AnyObject"
+- "String"
+- "NSNotificationCenter"
+- "NSOperationQueue"
+depends-member:
+- ["PSs9AnyObject", "AnyObject"]
+- !private ["PSs9AnyObject", "FunkyNotificationManager"]
+- ["PSs9AnyObject", "NSNotificationCenter"]
+- ["PSs9AnyObject", "NSOperationQueue"]
+- !private ["PSs9AnyObject", "addObserverForName"]
+- !private ["PSs9AnyObject", "allObservers"]
+- ["PSs9AnyObject", "defaultCenter"]
+- !private ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "mainQueue"]
+- !private ["PSs9AnyObject", "notificationCenter"]
+- !private ["PSs9AnyObject", "postNotificationName"]
+- !private ["PSs9AnyObject", "privateInstance"]
+- !private ["PSs9AnyObject", "queue"]
+- !private ["PSs9AnyObject", "removeObserver"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "init"]
+- !private ["Sa", "removeAll"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "removeAll"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "addObserverForName"]
+- ["PSs11CVarArgType", "defaultCenter"]
+- ["PSs11CVarArgType", "mainQueue"]
+- !private ["PSs11CVarArgType", "postNotificationName"]
+- !private ["PSs11CVarArgType", "removeObserver"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "removeAll"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "removeAll"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addObserverForName"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- ["PSs23CustomStringConvertible", "defaultCenter"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "mainQueue"]
+- !private ["PSs23CustomStringConvertible", "postNotificationName"]
+- !private ["PSs23CustomStringConvertible", "removeAll"]
+- !private ["PSs23CustomStringConvertible", "removeObserver"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addObserverForName"]
+- ["PSs9Equatable", "defaultCenter"]
+- ["PSs9Equatable", "mainQueue"]
+- !private ["PSs9Equatable", "postNotificationName"]
+- !private ["PSs9Equatable", "removeObserver"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- ["C19NotificationManager24FunkyNotificationManager", "AnyObject"]
+- ["C19NotificationManager24FunkyNotificationManager", "FunkyNotificationManager"]
+- ["C19NotificationManager24FunkyNotificationManager", "NSNotification"]
+- ["C19NotificationManager24FunkyNotificationManager", "NSNotificationCenter"]
+- ["C19NotificationManager24FunkyNotificationManager", "NSObjectProtocol"]
+- ["C19NotificationManager24FunkyNotificationManager", "NSOperationQueue"]
+- ["C19NotificationManager24FunkyNotificationManager", "String"]
+- ["C19NotificationManager24FunkyNotificationManager", "Void"]
+- ["C19NotificationManager24FunkyNotificationManager", "addNotificationObserver"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "allObservers"]
+- ["C19NotificationManager24FunkyNotificationManager", "deinit"]
+- ["C19NotificationManager24FunkyNotificationManager", "destroy"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "init"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "notificationCenter"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "notificationCenter.storage"]
+- ["C19NotificationManager24FunkyNotificationManager", "postNotification"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "privateInstance"]
+- ["C19NotificationManager24FunkyNotificationManager", "queue"]
+- !private ["C19NotificationManager24FunkyNotificationManager", "queue.storage"]
+- ["C19NotificationManager24FunkyNotificationManager", "remove"]
+- ["C19NotificationManager24FunkyNotificationManager", "sharedInstance"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addObserverForName"]
+- ["PSs8Hashable", "defaultCenter"]
+- ["PSs8Hashable", "mainQueue"]
+- !private ["PSs8Hashable", "postNotificationName"]
+- !private ["PSs8Hashable", "removeObserver"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "removeAll"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "removeAll"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "removeAll"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "removeAll"]
+- !private ["CSo20NSNotificationCenter", "addObserverForName"]
+- ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo20NSNotificationCenter", "removeObserver"]
+- !private ["CSo8NSObject", "addObserverForName"]
+- ["CSo8NSObject", "defaultCenter"]
+- ["CSo8NSObject", "mainQueue"]
+- !private ["CSo8NSObject", "postNotificationName"]
+- !private ["CSo8NSObject", "removeObserver"]
+- !private ["PSo16NSObjectProtocol", "addObserverForName"]
+- ["PSo16NSObjectProtocol", "defaultCenter"]
+- ["PSo16NSObjectProtocol", "mainQueue"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- !private ["PSo16NSObjectProtocol", "removeObserver"]
+- ["CSo16NSOperationQueue", "mainQueue"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "removeAll"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "removeAll"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "removeAll"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "removeAll"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "removeAll"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "append"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "removeAll"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "C19NotificationManager24FunkyNotificationManager"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "CSo20NSNotificationCenter"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo16NSOperationQueue"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "0c7c6a55078299d3070b6dcd4c4f3e0b"
