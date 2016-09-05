@@ -95,30 +95,29 @@ class FunkyNotificationManager  {
         if let _ = allObservers[name!] {
             
             //Check if notification name as key contains more than one observers
-            if let observersArray = allObservers[name!] where observersArray.count > 0 {
+            if let observersArray = allObservers[name!] where observersArray.count > 1 {
                 
                 var currentObservers = allObservers[name!] // get all observers array
                 for (index, observerDict) in observersArray.enumerate() {
                     
                     //Get current observer dictioanry value and compare
-                    let currentObserver = observerDict["observer"]?.value as? AnyObject
-                    if currentObserver === observer {
+                    if let currentObserver = (observerDict["observer"]?.value as? AnyObject) where currentObserver === observer {
                         currentObservers?.removeAtIndex(index)
                     }
                 }
                 
                 //Update observer dictionary with observers list
                 allObservers.updateValue(currentObservers!, forKey: name!)
-                
-                //If no observer is exist in list then clear dictionary
-                if currentObservers?.count == 0 {
-                    print("All observers removed")
-                    allObservers.removeAll()
-                }
             }
             //Dictionary notification name as key contains only one observer
             else {
                 allObservers.removeValueForKey(name!)
+            }
+           
+            //If no observer is exist in list then clear dictionary
+            if allObservers.keys.count == 0 {
+                print("All observers removed")
+                allObservers.removeAll()
             }
         }
     }
