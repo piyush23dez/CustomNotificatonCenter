@@ -120,8 +120,8 @@ class FunkyNotificationManager  {
             else {
                 allObservers.removeValueForKey(name!)
             }
+        }
     }
-}
     
     func destroy() {
         allObservers.removeAll()
