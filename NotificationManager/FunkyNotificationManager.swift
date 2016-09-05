@@ -70,7 +70,7 @@ class FunkyNotificationManager  {
         //Check if notification name exist in dictionary
         if let _ = allObservers[name!] {
             
-            //Check if observers array count > 0 for that notificatoin name
+            //Check if observers array count > 1 for that notificatoin name
             if let observersArray = allObservers[name!] where observersArray.count > 1 {
                 
                 //Post notifications to all items for that name
