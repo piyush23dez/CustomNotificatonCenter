@@ -69,7 +69,7 @@ class FunkyNotificationManager  {
         }
         
         if allObservers.count == 0 {
-            print("No observer int the lists")
+            print("No observer in the lists")
         }
     }
     
