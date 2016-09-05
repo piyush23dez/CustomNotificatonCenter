@@ -31,8 +31,8 @@ class FunkyNotificationManager  {
     
     private static var privateInstance: FunkyNotificationManager?
     
-    //Same notification name will hold an array of observers(a dictionary)
-    private var allObservers =  [String : [[String : DataType]]]()
+    //Dictionary key as notification name will hold an array of observers(a dictionary)
+    var allObservers = Dictionary<String, [[String : DataType]]>()
     
     static var sharedInstance: FunkyNotificationManager? {
         
@@ -47,7 +47,6 @@ class FunkyNotificationManager  {
     private init() {}
     
     func addNotificationObserver(name name: String?, observer: AnyObject?, block: () -> Void)  {
-        let notificationName = DataType.AsString(value: name!).value as? String
         let observerDict: [String : DataType] = ["observer" : DataType.AsAnyObject(value: observer!), "block" : DataType.AsClosure(block: block)]
         
         //If notification name already exists in the dictionary, then
@@ -58,11 +57,11 @@ class FunkyNotificationManager  {
             observersArray.append(observerDict)
             
             //Update notification name's observers array
-            allObservers = [notificationName! : observersArray]
+            allObservers.updateValue(observersArray, forKey: name!)
         }
         else {
-            //If notification name doesn't exist then add it as new entry of observer
-            allObservers = [notificationName! : [observerDict]]
+            //If notification name doesn't exist then add it as new entry of observers
+            allObservers.updateValue([observerDict], forKey: name!)
         }
     }
 
@@ -72,7 +71,7 @@ class FunkyNotificationManager  {
         if let _ = allObservers[name!] {
             
             //Check if observers array count > 0 for that notificatoin name
-            if let observersArray = allObservers[name!] where observersArray.count > 0 {
+            if let observersArray = allObservers[name!] where observersArray.count > 1 {
                 
                 //Post notifications to all items for that name
                 for observer in observersArray {
@@ -81,6 +80,7 @@ class FunkyNotificationManager  {
                 }
             }
             else {
+                
                 //If observers array count == 1 for that notificatoin name
                 let observerDict = allObservers[name!]![0]
                 let handler = observerDict["block"]?.value as? (() -> Void)
@@ -91,7 +91,6 @@ class FunkyNotificationManager  {
     
     func remove(name: String?, observer: AnyObject?) {
         
-<<<<<<< HEAD
         //Check if notification name exist in dictionary
         if let _ = allObservers[name!] {
             
@@ -109,10 +108,11 @@ class FunkyNotificationManager  {
                 }
                 
                 //Update observer dictionary with observers list
-                allObservers = [name! : currentObservers!]
+                allObservers.updateValue(currentObservers!, forKey: name!)
                 
                 //If no observer is exist in list then clear dictionary
                 if currentObservers?.count == 0 {
+                    print("All observers removed")
                     allObservers.removeAll()
                 }
             }
@@ -120,20 +120,8 @@ class FunkyNotificationManager  {
             else {
                 allObservers.removeValueForKey(name!)
             }
-=======
-        if allObservers.count == 0 {
-            return
-        }
-        
-        for (index, observerDict) in allObservers.enumerate() where (observerDict["observer"]!.value as? AnyObject) === observer! {
-            allObservers.removeAtIndex(index)
-        }
-        
-        if allObservers.count == 0 {
-            print("No observer in the lists")
->>>>>>> 3f22e92c34231381ff59157139bf51f279774d47
-        }
     }
+}
     
     func destroy() {
         allObservers.removeAll()

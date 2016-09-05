@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func post(sender: AnyObject) {
+    @IBAction func post(sender: AnyObject) {        
         funkyNotificationInstance.postNotification("GenericNotification")
-    }   
+    }
     
     @IBAction func removeObservers() {
         car.removeObserver()
@@ -39,7 +39,7 @@ class Person {
     lazy var funkyNotificationInstance = FunkyNotificationManager.sharedInstance!
     
     init() {
-        FunkyNotificationManager.sharedInstance?.addNotificationObserver(name: "GenericNotification", observer: self, block: handleNotification)
+        funkyNotificationInstance.addNotificationObserver(name: "GenericNotification", observer: self, block: handleNotification)
     }
     
     var handleNotification: () -> Void  = { notification in
@@ -47,7 +47,7 @@ class Person {
     }
     
     func removeObserver() {
-        FunkyNotificationManager.sharedInstance?.remove("GenericNotification", observer: self)
+        funkyNotificationInstance.remove("GenericNotification", observer: self)
     }
 }
 
@@ -56,7 +56,7 @@ class Car {
     lazy var funkyNotificationInstance = FunkyNotificationManager.sharedInstance!
     
     init() {
-        FunkyNotificationManager.sharedInstance?.addNotificationObserver(name: "GenericNotification", observer: self, block: handleNotification)
+        funkyNotificationInstance.addNotificationObserver(name: "GenericNotification", observer: self, block: handleNotification)
     }
     
     var handleNotification: () -> Void  = { notification in
@@ -64,7 +64,7 @@ class Car {
     }
     
     func removeObserver() {
-        FunkyNotificationManager.sharedInstance?.remove("GenericNotification", observer: self)
+        funkyNotificationInstance.remove("GenericNotification", observer: self)
     }
 }
 
