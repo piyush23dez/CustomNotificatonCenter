@@ -91,6 +91,7 @@ class FunkyNotificationManager  {
     
     func remove(name: String?, observer: AnyObject?) {
         
+<<<<<<< HEAD
         //Check if notification name exist in dictionary
         if let _ = allObservers[name!] {
             
@@ -119,6 +120,18 @@ class FunkyNotificationManager  {
             else {
                 allObservers.removeValueForKey(name!)
             }
+=======
+        if allObservers.count == 0 {
+            return
+        }
+        
+        for (index, observerDict) in allObservers.enumerate() where (observerDict["observer"]!.value as? AnyObject) === observer! {
+            allObservers.removeAtIndex(index)
+        }
+        
+        if allObservers.count == 0 {
+            print("No observer in the lists")
+>>>>>>> 3f22e92c34231381ff59157139bf51f279774d47
         }
     }
     
