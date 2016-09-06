@@ -70,7 +70,7 @@ class FunkyNotificationManager  {
         //Check if notification name exist in dictionary
         if let _ = allObservers[name!] {
             
-            //Check if observers array count > 0 for that notificatoin name
+            //Check if observers array count > 1 for that notificatoin name
             if let observersArray = allObservers[name!] where observersArray.count > 1 {
                 
                 //Post notifications to all items for that name
@@ -91,34 +91,30 @@ class FunkyNotificationManager  {
     
     func remove(name: String?, observer: AnyObject?) {
         
-        //Check if notification name exist in dictionary
-        if let _ = allObservers[name!] {
+        if allObservers.keys.count == 0 {
+            return
+        }
+        
+        if let observersArr = allObservers[name!] where observersArr.count > 1 {
             
-            //Check if notification name as key contains more than one observers
-            if let observersArray = allObservers[name!] where observersArray.count > 1 {
-                
-                var currentObservers = allObservers[name!] // get all observers array
-                for (index, observerDict) in observersArray.enumerate() {
-                    
-                    //Get current observer dictioanry value and compare
-                    if let currentObserver = (observerDict["observer"]?.value as? AnyObject) where currentObserver === observer {
-                        currentObservers?.removeAtIndex(index)
-                    }
+            var tempObservers = observersArr
+            for (index, currentObserverDict) in observersArr.enumerate() {
+                if currentObserverDict["observer"]!.value as? AnyObject === observer! {
+                    tempObservers.removeAtIndex(index)
+                    allObservers.updateValue(tempObservers, forKey: name!)
                 }
-                
-                //Update observer dictionary with observers list
-                allObservers.updateValue(currentObservers!, forKey: name!)
             }
-            //Dictionary notification name as key contains only one observer
-            else {
-                allObservers.removeValueForKey(name!)
+        }
+        else {
+            if let currentObserverDict: [String : DataType] = allObservers[name!]?[0] {
+                if (currentObserverDict["observer"]!.value as? AnyObject)  === observer! {
+                    allObservers.removeValueForKey(name!)
+                }
             }
-           
-            //If no observer is exist in list then clear dictionary
-            if allObservers.keys.count == 0 {
-                print("All observers removed")
-                allObservers.removeAll()
-            }
+        }
+        
+        if allObservers.keys.count == 0 {
+            print("All observers removed")
         }
     }
     
