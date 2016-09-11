@@ -6,7 +6,6 @@
 //
 //  Created by Piyush Sharma on 9/2/16.
 //  Copyright © 2016 Piyush Sharma. All rights reserved.
-//  http://stackoverflow.com/questions/24415662/object-x-of-class-y-does-not-implement-methodsignatureforselector-in-swift
 
 import Foundation
 
