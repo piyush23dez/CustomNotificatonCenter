@@ -7,6 +7,7 @@
 //  Created by Piyush Sharma on 9/2/16.
 //  Copyright © 2016 Piyush Sharma. All rights reserved.
 
+
 import Foundation
 
 enum DataType {
@@ -50,7 +51,7 @@ class FunkyNotificationManager {
     private init() {}
     
     private func addObserver(name: String?, observer: AnyObject?, observerDict: [String : DataType]) {
-
+        
         //If notification name already exists in the dictionary, then
         if let _ = allObservers[name!] {
             
@@ -78,7 +79,7 @@ class FunkyNotificationManager {
         let observerDict: [String : DataType] = ["observer" : DataType.AsAnyObject(value: observer!), "selector" : DataType.AsSelector(selector)]
         self.addObserver(name!, observer: observer!, observerDict: observerDict)
     }
-
+    
     func postNotification(name: String?) {
         
         //Check if notification name exist in dictionary
@@ -107,13 +108,12 @@ class FunkyNotificationManager {
                 }
                 else if let selector = observerDict["selector"]?.value as? Selector {
                     let observer = observerDict["observer"]?.value as? AnyObject
-                     NSTimer.scheduledTimerWithTimeInterval(0, target: observer!, selector: selector, userInfo: nil, repeats: false)
+                    NSTimer.scheduledTimerWithTimeInterval(0, target: observer!, selector: selector, userInfo: nil, repeats: false)
                 }
             }
         }
     }
     
-
     func remove(name: String?, observer: AnyObject?) {
         
         if allObservers.keys.count == 0 {

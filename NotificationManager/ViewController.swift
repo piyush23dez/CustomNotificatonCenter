@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     
     @IBAction func post(sender: AnyObject) {        
         funkyNotificationInstance.postNotification("GenericNotification")
-        //funkyNotificationInstance.postNotification("GenericNotification")
     }
     
     @IBAction func removeObservers() {
@@ -49,7 +48,7 @@ class Person {
     }
     
     var handleNotification: () -> Void  = { notification in
-        print("Notification received in Person class using block")
+        print("Notification received in Person class")
     }
     
     func removeObserver() {

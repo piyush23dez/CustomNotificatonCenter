@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NotificationManager/FunkyNotificationManager.swift"
-            timestampString = "495241657.328198"
+            timestampString = "495246736.365821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "addObserver(_:observer:observerDict:)"
-            landmarkType = "5">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "FunkyNotificationManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
