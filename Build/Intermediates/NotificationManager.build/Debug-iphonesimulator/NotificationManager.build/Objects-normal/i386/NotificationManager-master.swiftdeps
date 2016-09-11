@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "24e044117cedaa095663ecb93d47ad66"
+build_time: [526162918, 941699000]
+inputs:
+  "/Users/sharmpi/Downloads/NotificationManager/NotificationManager/ViewController.swift": [526162918, 0]
+  "/Users/sharmpi/Downloads/NotificationManager/NotificationManager/AppDelegate.swift": [526144152, 0]
+  "/Users/sharmpi/Downloads/NotificationManager/NotificationManager/FunkyNotificationManager.swift": [526162711, 0]
