@@ -53,14 +53,16 @@ class FunkyNotificationManager {
     private func addObserver(name: String?, observer: AnyObject?, observerDict: [String : DataType]) {
         
         //If notification name already exists in the dictionary, then
-        if let _ = allObservers[name!] {
+        if let existingObserversArray = allObservers[name!] {
+           
+            //Hold observers in temp array
+            var tempObserversArray = existingObserversArray
             
-            //Append new observer for that notification name
-            var observersArray: [[String : DataType]] = allObservers[name!]!
-            observersArray.append(observerDict)
+            //Append new observer dictionary
+            tempObserversArray.append(observerDict)
             
             //Update notification name's observers array
-            allObservers.updateValue(observersArray, forKey: name!)
+            allObservers.updateValue(tempObserversArray, forKey: name!)
         }
         else {
             //If notification name doesn't exist then add it as new entry of observers
