@@ -133,11 +133,7 @@ class FunkyNotificationManager {
             }
         }
         else {
-            if let currentObserverDict: [String : DataType] = allObservers[name!]?[0] {
-                if (currentObserverDict["observer"]!.value as? AnyObject)  === observer! {
-                    allObservers.removeValueForKey(name!)
-                }
-            }
+            allObservers.removeValueForKey(name!)
         }
         
         if allObservers.keys.count == 0 {
