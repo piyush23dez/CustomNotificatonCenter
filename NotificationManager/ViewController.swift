@@ -65,6 +65,8 @@ class Car {
         funkyNotificationInstance.addNotificationObserver(name: "GenericNotification", observer: self, selector: Selector("handleCarSelector"))
     }
     
+    /* When you mark a member declaration with the dynamic modifier, 
+       access to that member is always dynamically dispatched using the Objective-C runtime.*/
     dynamic func handleCarSelector() {
         print("Notification received in car class using selector")
     }
